@@ -1,0 +1,17 @@
+body {
+    background: #acddb8;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+}
+
+img{
+    width: 50%;
+    border-radius: 12px;
+}
+footer{
+    position: fixed;
+    padding: 20px;
+    bottom: 0px;
+    text-align: center;
+}
