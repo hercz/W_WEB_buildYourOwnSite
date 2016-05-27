@@ -1,0 +1,7 @@
+.row {
+    padding: 4px;
+}
+
+.errorClass {
+    border: 3px solid red;
+}

@@ -3,16 +3,22 @@
  */
 
 
+$(function() {
+    $("#nameInput").on("change", function () {
+        sendMessage();
+    })
+})
+
 
 function validateContactData() {
-    var formName = document.getElementById("name").value;
-    var formEmail = document.getElementById("email").value;
-    var formMessage = document.getElementById("message").value;
+    var formName = document.getElementById("nameInput").value;
+    var formEmail = document.getElementById("emailInput").value;
+    var formMessage = document.getElementById("messageInput").value;
 
 
     // (?=[\s]{1,})(?=[\w\s]{3,}) working elswhere, but here not, but this is better
 
-    var nameIsValid = new RegExp("^[a-z]{3,}$").test(formName);
+    var nameIsValid = new RegExp("^[a-zA-Z]{3,}$").test(formName);
     var emailIsValid = new RegExp("^.+(\.hu|\.com)$").test(formEmail);
     var messageIsValid = new RegExp("^[a-z]{20,500}$").test(formMessage);
 
