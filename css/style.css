@@ -5,3 +5,7 @@
 .errorClass {
     border: 3px solid red;
 }
+img {
+    display: block;
+    margin: 0 auto 0 auto;
+}

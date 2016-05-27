@@ -2,24 +2,36 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/superhero-bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Light Switcher</title>
 </head>
 <body>
-<div class="content"></div>
+<div class="container">
+    <header class="container">
+        <nav id="menu" class="navbar navbar-default">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="nav"><a class="active" href="index.html">Home</a></li>
+                <li class="nav active"><a href="contact.html">Contact</a></li>
+                <li class="nav active"><a href="musicPlayer.html">Music Player</a></li>
+                <li class="nav"><a href="dog.html">Dog</a></li>
+                <li class="nav"><a href="duck.html">Duck</a></li>
+                <li class="nav"><a href="lightSwitch.html">Sloth</a></li>
+            </ul>
+        </nav>
+        <div class="page-header">
+            <h1>Turn On the Light</h1>
+        </div>
+    </header>
+    <section id="body" class="container">
+        <div class="col-lg-offset-4 col-lg-4">
+            <img id="bulbpic" src="subpages/bulbSwitcher/bulbOff.jpeg" class="img-responsive" width="304" height="236" onclick="switchbulb()">
+        </div>
 
-<ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="dog.html">Dog</a></li>
-    <li><a href="duck.html">Duck</a></li>
-    <li><a href="lightSwitch.html">Sloth</a></li>
-</ul>
-
-<img src="img/sloth.jpg" alt="Paris" width="40%"></li>
-
-<footer>
-    This is the footer, where there are things for the footer.
-</footer>
+    </section>
+</div>
+    <script src="jquery/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="subpages/bulbSwitcher/bulbSwitcher.js" type="text/javascript"></script>
 </body>
 </html>
